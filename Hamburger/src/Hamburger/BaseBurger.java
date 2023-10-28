@@ -9,20 +9,43 @@ public class BaseBurger {
     private String meat;
     private double base_price;
     private double total_price;
+<<<<<<< HEAD
     private String size; 
 
     BaseBurger(String name, String breadRollType,String meat,double basePrice, String size){
+=======
+    private double discount;
+    
+    BaseBurger(String name,
+            String breadRollType, 
+            String meat, 
+            double basePrice){
+>>>>>>> a1caf8d7d5f5da149de1475d1f40e686d3935c02
         this.name = name;
         this.breadRollType =  breadRollType;
         this.meat = meat;
         this.base_price = basePrice;
+<<<<<<< HEAD
         this.size = "Normal";
 
     }
 
     public void setSize(String size) {
         this.size = size;
+=======
+        this.discount = 0;
+>>>>>>> a1caf8d7d5f5da149de1475d1f40e686d3935c02
     }
+    
+    BaseBurger(String name,
+            String breadRollType, 
+            String meat, 
+            double basePrice,
+            double discount){
+        this(name, breadRollType, meat, basePrice);
+        this.discount = discount;
+    }
+    
     public List<Integer> additions = new ArrayList<>();
     private final double addedPrice = 23;
 
@@ -59,4 +82,7 @@ public class BaseBurger {
         return base_price;
     }
 
+    public void setDiscount(double discount){
+        this.discount = discount;
+    }
 }

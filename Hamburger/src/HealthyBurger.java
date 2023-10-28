@@ -1,3 +1,5 @@
+import Hamburger.BaseBurger;
+
 public class HealthyBurger extends BurgerDetails {
 
     HealthyBurger() {
