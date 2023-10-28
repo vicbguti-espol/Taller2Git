@@ -15,8 +15,6 @@ public class HealthyBurger extends BurgerDetails {
         items.add(burgerPojo);
         items.add(burgerPojo1);
         super.getAllAdditonalDetails();
-        System.out.println("Salad Cream");
-        BaseBurger.additions.add(7);
     }
 
     @Override
