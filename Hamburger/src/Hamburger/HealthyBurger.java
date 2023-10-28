@@ -11,6 +11,8 @@ public class HealthyBurger extends BaseBurger {
         System.out.println("Mustard");
         additions.add(6);
         System.out.println("Ketchup");
+        additions.add(8);
+        System.out.println("Mayonnaise");
 
     }
 
